@@ -118,7 +118,7 @@ void controlTask(void *pvParameters)
   ledcSetup(CHANNEL, FREQUENCY, RESOLUTION);
   ledcAttachPin(COOLER, CHANNEL);
 
-  // Set the desired temperature setpoint
+  // Set the desired temperature gradient setpoint
   Setpoint = 0.3;
 
   // Configure the PID controller
